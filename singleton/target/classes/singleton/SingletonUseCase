@@ -1,0 +1,5 @@
+When you use Logger, you use Singleton pattern for the Logger class. 
+In case it is not Singleton, every client will have its own Logger 
+object and there will be concurrent access on the Logger instance 
+in Multithreaded environment, and multiple clients will create/write 
+to the Log file concurrently, this leads to data corruption.
